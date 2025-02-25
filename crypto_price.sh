@@ -35,7 +35,7 @@ API_URL="$BASE_URL?ids=$COIN&vs_currencies=$CURRENCY&include_last_updated_at=tru
 
 # Getting response from api
 
-RESPONSE=$(curl -s --fail "$API_URL")
+RESPONSE=$(curl -s  "$API_URL")
 
 # if response is not successful exit the script
 if [ $? -ne 0 ]; then
